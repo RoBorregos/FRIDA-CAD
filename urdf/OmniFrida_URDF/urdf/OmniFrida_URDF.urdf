@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="OmniFrida_URDF">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0035289 4.9532E-05 0.18881"
+        rpy="0 0 0" />
+      <mass
+        value="31.284" />
+      <inertia
+        ixx="0.16472"
+        ixy="6.3557E-05"
+        ixz="0.00075615"
+        iyy="0.12042"
+        iyz="-0.0002185"
+        izz="0.20341" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://OmniFrida_URDF/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://OmniFrida_URDF/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel_FL">
+    <inertial>
+      <origin
+        xyz="4.3854E-11 -1.1681E-08 -0.0034008"
+        rpy="0 0 0" />
+      <mass
+        value="0.31652" />
+      <inertia
+        ixx="0.0001855"
+        ixy="5.4996E-14"
+        ixz="2.3454E-11"
+        iyy="0.0001855"
+        iyz="3.0886E-11"
+        izz="0.00032954" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://OmniFrida_URDF/meshes/wheel_FL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://OmniFrida_URDF/meshes/wheel_FL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_FL_joint"
+    type="continuous">
+    <origin
+      xyz="0.18479 0.22257 0.037696"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_FL" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_FR">
+    <inertial>
+      <origin
+        xyz="1.468E-08 -1.1471E-09 -0.0029311"
+        rpy="0 0 0" />
+      <mass
+        value="0.3168" />
+      <inertia
+        ixx="0.00018552"
+        ixy="-3.2903E-11"
+        ixz="3.2976E-11"
+        iyy="0.00018552"
+        iyz="1.461E-10"
+        izz="0.00032954" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://OmniFrida_URDF/meshes/wheel_FR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://OmniFrida_URDF/meshes/wheel_FR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_FR_joint"
+    type="continuous">
+    <origin
+      xyz="0.18479 -0.22257 0.037696"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_FR" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_RL">
+    <inertial>
+      <origin
+        xyz="6.2429E-09 -8.7178E-09 -0.0034189"
+        rpy="0 0 0" />
+      <mass
+        value="0.3168" />
+      <inertia
+        ixx="0.00018552"
+        ixy="-3.9508E-11"
+        ixz="1.1755E-10"
+        iyy="0.00018552"
+        iyz="9.3313E-11"
+        izz="0.00032954" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://OmniFrida_URDF/meshes/wheel_RL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://OmniFrida_URDF/meshes/wheel_RL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_RL_joint"
+    type="continuous">
+    <origin
+      xyz="-0.18479 0.22257 0.037696"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_RL" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_RR">
+    <inertial>
+      <origin
+        xyz="1.0016E-09 -1.1941E-08 -0.0029492"
+        rpy="0 0 0" />
+      <mass
+        value="0.31652" />
+      <inertia
+        ixx="0.0001855"
+        ixy="4.5423E-14"
+        ixz="2.6222E-11"
+        iyy="0.0001855"
+        iyz="-2.8656E-11"
+        izz="0.00032954" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://OmniFrida_URDF/meshes/wheel_RR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://OmniFrida_URDF/meshes/wheel_RR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_RR_joint"
+    type="continuous">
+    <origin
+      xyz="-0.18479 -0.22257 0.037696"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_RR" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="lidar_front">
+    <inertial>
+      <origin
+        xyz="-0.00015912 -0.030274 -0.0051535"
+        rpy="0 0 0" />
+      <mass
+        value="0.10047" />
+      <inertia
+        ixx="3.4221E-05"
+        ixy="9.8255E-09"
+        ixz="-2.3575E-07"
+        iyy="3.4751E-05"
+        iyz="4.573E-09"
+        izz="4.2551E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://OmniFrida_URDF/meshes/lidar_front.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://OmniFrida_URDF/meshes/lidar_front.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_front_joint"
+    type="fixed">
+    <origin
+      xyz="0.31803 -0.20725 0.1358"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar_front" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="lidar_rear">
+    <inertial>
+      <origin
+        xyz="-0.00015912 3.3676E-06 -0.0051535"
+        rpy="0 0 0" />
+      <mass
+        value="0.10047" />
+      <inertia
+        ixx="3.4221E-05"
+        ixy="9.8255E-09"
+        ixz="-2.3575E-07"
+        iyy="3.4751E-05"
+        iyz="4.573E-09"
+        izz="4.2551E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://OmniFrida_URDF/meshes/lidar_rear.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://OmniFrida_URDF/meshes/lidar_rear.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_rear_joint"
+    type="fixed">
+    <origin
+      xyz="-0.28775 0.20725 0.1358"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar_rear" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="xarm">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://OmniFrida_URDF/meshes/xarm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://OmniFrida_URDF/meshes/xarm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="xarm_joint"
+    type="fixed">
+    <origin
+      xyz="0.0410000000000036 -0.00367166302995694 0.520695984178765"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="xarm" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
