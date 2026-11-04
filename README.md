@@ -1,6 +1,8 @@
 # frida-omnibase-cad
 Full CAD of the FRIDA Omnibase | RoBorregos @Home
 
+![CAD model of FRIDA: the omnidirectional base with the xArm mounted on top](docs/omnifrida.jpeg)
+
 ## Layout
 
 | Path | Contents |
