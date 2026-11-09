@@ -1,4 +1,4 @@
-# frida-omnibase-cad
+# FRIDA-CAD
 Full CAD of the FRIDA Omnibase | RoBorregos @Home
 
 ![CAD model of FRIDA: the omnidirectional base with the xArm mounted on top](docs/omnifrida.jpeg)
@@ -23,14 +23,14 @@ CAD files and meshes are stored with [Git LFS](https://git-lfs.com). Install it 
 
 ```sh
 git lfs install
-git clone https://github.com/RoBorregos/frida-omnibase-cad.git
+git clone https://github.com/RoBorregos/FRIDA-CAD.git
 ```
 
 To get only the URDF packages without downloading the whole CAD:
 
 ```sh
-GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/RoBorregos/frida-omnibase-cad.git
-cd frida-omnibase-cad
+GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/RoBorregos/FRIDA-CAD.git
+cd FRIDA-CAD
 git lfs pull --include="urdf/**"
 ```
 
